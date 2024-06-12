@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP Optativo 1</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <label>Nombre</label>
+            <input type="text" name="nombre" id="nombre_id">
+        </div>
+        <div>
+            <label>Apellido</label>
+            <input type="text" name="apellido" id="apellido_id">
+        </div>
+        <div>
+            <label>DNI</label>
+            <input type="number" step="1" min="1" name="dni" id="dni_id">
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" id="email_id">
+        </div>
+        <div>
+            <label>Telefono</label>
+            <input type="text" name="telefono" id="telefono_id">
+        </div>
+        <div>
+            <label>Tipo de seguro</label>
+            <select name="tipo_seguro" id="tipo_seguro_id" onchange="tipoSeguro()">
+                <option value="1">Basico</option>
+                <option value="2">Intermedio</option>
+                <option value="3">Premium</option>
+            </select>
+        </div>
+        <div id="mensaje_valor"></div>
+    </form>
+</body>
+
+</html>

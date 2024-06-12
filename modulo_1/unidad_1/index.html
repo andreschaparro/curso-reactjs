@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 1</title>
+    <!--forma recomendada de linkear el codigo JS con el html-->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    Hello World
+    <!--forma no recomendada de linkear el codigo JS con el html-->
+    <script>
+        alert("Hola Mundo")
+    </script>
+
+    <!--evento onclick, todos los eventos empiezan con 'on' algo-->
+    <button onclick="saludo()">Saludar</button>
+
+    <!--forma de ejecutar una funcion de JS cuando se produce el evento onsubmit-->
+    <form action="" onsubmit="registrarse(); return false" name="form_registro">
+        <div>
+            <label>Nombre</label>
+            <!--el id no se puede repetir en todo el documento html-->
+            <input type="text" name="nombre" id="nombre_id">
+        </div>
+        <div id="nombre_error"></div>
+        <div>
+            <label>Apellido</label>
+            <input type="text" name="apellido" id="apellido_id">
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" id="email_id">
+        </div>
+        <div>
+            <label>Contraseña</label>
+            <input type="password" name="password" id="password_id">
+        </div>
+        <div id="mensaje"></div>
+        <!--si se hace click en el boton dispara el evento onsubmit-->
+        <button type="submit">Registrar</button>
+        <!--el evento onsubmit ejecutar un verbo get o post del protocolo http para enviar los datos a una base de datos-->
+    </form>
+</body>
+
+</html>
