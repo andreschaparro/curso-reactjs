@@ -107,6 +107,8 @@ Ahora, podemos separar el maquetado de los datos. Esto es muy importante, para c
 
 Se utiliza cuando necesitamos modificar algo que esta en la pantalla en tiempo de ejecucion. Para inyectar algo nuevo no hace falta usar estados, lo hago como hasta ahora.
 
+En `Productos.jsx`, podemos ver su uso:
+
 ```
 import React,{Component} from "react";
 import Producto from "./Producto";
