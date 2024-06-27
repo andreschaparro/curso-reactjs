@@ -19,7 +19,7 @@ Pasos de que se hizo:
 5. Crear el componente NotFound en la carpeta Pages y asociarle cualquier otra ruta.
 6. Crear el componente NavBar.
 7. Modificar el componente App para que utilice los componentes Public y NavBar.
-8. Crear el componente Detalle en la carpeta Pages y asociarle la ruta con la propiedad id "/producto/:id".
+8. Crear el componente Detalle en la carpeta Pages y asociarle la ruta "/producto/:id". Donde id es una propiedad.
 9. Modificar los componentes Producto y Boton, de modo que al pulsarlo, se haga una redireccion a "/producto/:id" sin recargar toda la pagina (SPA). Para ello, utilizar template strings y el componente Link.
 10. En productosServices crear la funcion getByIdProductos para consumir datos de la API de detalle.
 11. En el componente Detalle utilizar el Hook useParams para recuperar el id y pedir los datos a la API de detalle.
